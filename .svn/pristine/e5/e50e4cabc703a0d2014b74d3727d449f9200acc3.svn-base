@@ -1,0 +1,39 @@
+// Bindingdots color schema
+$background-default: #f7f7f7;
+$background-secondary: #f1f7fa;
+
+$text-darken: #000;
+$text-default: #333333;
+$text-lighten: #7f7f7f;
+$primary-dark: #002d72;
+$primary: #e03a3e;
+$primary-light: #ff898c;
+$secondary: #686a7f;
+$success: #3ab26e;
+$success-dark: #1d8488;
+$success-light: #6a8e8c;
+$error-dark: #d91943;
+$error: #ff898c;
+$error-light: #ffbabc;
+$warning: #fae7a6;
+$warning-light: #fbe9c3;
+$info: #b2b2b2;
+$light: #e5e5e5;
+$dark: #333;
+$neutral: #ffffff;
+
+$transparent: #ffffff00;
+
+// main color palette
+$black: #000;
+$solid-black: #333;
+$white: #fff;
+$sapphire: #005f9e;
+$ocean: #009cdc;
+$turquoise: #00aea9;
+$dark-raspberry: #762157;
+$raspberry: #b42573;
+$light-yellow: #f8fdda;
+$eby-red: #e03a3e;
+$orange: #ff7f30;
+$green: #6ba43a;

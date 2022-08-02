@@ -1,0 +1,24 @@
+@import "variables.scss";
+
+:export {
+  backgroundDefault: $background-default;
+  backgroundSecondary: $background-secondary;
+  textDarken: $text-darken;
+  textDefault: $text-default;
+  textLighten: $text-lighten;
+  primaryDark: $primary-dark;
+  primary: $primary;
+  primaryLight: $primary-light;
+  secondary: $secondary;
+  success: $success;
+  successDark: $success-dark;
+  errorDark: $error-dark;
+  error: $error;
+  errorLight: $error-light;
+  warning: $warning;
+  warningLight: $warning;
+  info: $info;
+  light: $light;
+  dark: $dark;
+  neutral: $neutral;
+}

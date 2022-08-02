@@ -1,0 +1,7 @@
+import React from "react";
+import { Typography } from "@mui/material";
+
+const EmployeesHeader: React.FC = () => {
+  return <Typography>Employee Header</Typography>;
+};
+export default EmployeesHeader;

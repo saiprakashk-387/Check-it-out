@@ -1,5 +1,5 @@
 import React, { Suspense, useContext } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router , useParams ,useLocation} from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
 import Routes from "./AppRoutes";
@@ -22,6 +22,7 @@ const App: React.FC = () => {
   const theme = useTheme();
   const [isLoading] = useAxiosLoader();
   const { user } = useContext(GlobalContext);
+  const location= useLocation()
   return (
     <div className="App">
       <ToastContainer
@@ -37,8 +38,9 @@ const App: React.FC = () => {
         <Suspense fallback={<LoadingSpinner />}>
           <SetupAxios>
             <GlobalDataProvider>
-              {user?.isAuthenticated && <SideBar />}
-              <SideBar />
+              {location.pathname === "/Login" ? null:  <SideBar /> }
+              {/* {user?.isAuthenticated && <SideBar />} */}
+              {/* <SideBar /> */}
               <Box sx={{ width: "100%"}}>
               <Routes />
               </Box>

@@ -8,6 +8,7 @@ import { styled, alpha } from "@mui/material/styles";
 import SearchIcon from "@mui/icons-material/Search";
 import InputBase from "@mui/material/InputBase";
 import CreateEmployee from "./CreateEmployee";
+import AppModal from "components/shared/AppModal";
 
 const EmployeesHeader: React.FC = () => {
   const [model, setmodel] = useState(false);
@@ -219,7 +220,11 @@ const EmployeesHeader: React.FC = () => {
           </Typography>
         </Button>
       </Box>
-      <CreateEmployee open={model} closeCreateModel={closeCreateModel} />
+      {/* ///existing model */}
+      <AppModal open={model} onDismiss={closeCreateModel} children={'hello'} maxWidth={"xl"} height={"417px"} fullwidth={true}/>
+    
+    {/* /////custom model */}
+      {/* <CreateEmployee open={model} closeCreateModel={closeCreateModel} /> */}
     </Box>
   );
 };
